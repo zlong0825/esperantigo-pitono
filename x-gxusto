@@ -1,7 +1,7 @@
 #! python3
 #perfektigo.py- gxustigi tekstajxojn en gxustajn literojn de esperanto
 
-import sys,re
+import sys,re,pyperclip
 
 #TODO: 得到待检测文本
 # teksto保存输入的原始文本
@@ -22,4 +22,5 @@ for i in range(6):
     teksto=re.sub('sx','ŝ',teksto)
     teksto=re.sub('ux','ŭ',teksto)
 print(teksto)
+pyperclip.copy()
 
