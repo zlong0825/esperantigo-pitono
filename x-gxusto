@@ -1,0 +1,25 @@
+#! python3
+#perfektigo.py- gxustigi tekstajxojn en gxustajn literojn de esperanto
+
+import sys,re
+
+#TODO: 得到待检测文本
+# teksto保存输入的原始文本
+
+#if len(sys.argv)>1:
+#    teksto=' '.join(sys.argv[1:]) #搞清楚JOIN
+#else:
+#    teksto=str(pyperclip.paste())
+
+
+#TODO：替换X-sistemo结构的字母组合
+#构造匹配方案
+for i in range(6):
+    teskto=re.sub('gx','ĝ',teksto)
+    teksto=re.sub('cx','ĉ',teksto)
+    teksto=re.sub('hx','ĥ',teksto)
+    teksto=re.sub('jx','ĵ',teksto)
+    teksto=re.sub('sx','ŝ',teksto)
+    teksto=re.sub('ux','ŭ',teksto)
+print(teksto)
+
