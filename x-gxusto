@@ -3,17 +3,16 @@
 
 import sys,re,pyperclip
 
-#TODO: 得到待检测文本
-# teksto保存输入的原始文本
+#teksto por la originala tekstajxo
 
 #if len(sys.argv)>1:
-#    teksto=' '.join(sys.argv[1:]) #搞清楚JOIN
+#    teksto=' '.join(sys.argv[1:]) 
 #else:
 #    teksto=str(pyperclip.paste())
 
 
-#TODO：替换X-sistemo结构的字母组合
-#构造匹配方案
+#anstatauxigi la x-sistemstilajn kombinajxojn
+#malbona stilo sed klara logiko, hehehe
 for i in range(6):
     teskto=re.sub('gx','ĝ',teksto)
     teksto=re.sub('cx','ĉ',teksto)
